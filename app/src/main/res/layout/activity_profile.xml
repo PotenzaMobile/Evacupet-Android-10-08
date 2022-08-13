@@ -99,15 +99,13 @@
             <View
                 android:id="@+id/view_33"
                 style="@style/viewLineStyle"
-                android:layout_below="@+id/tv_last_name"
-                android:visibility="gone" />
+                android:layout_below="@+id/tv_last_name" />
 
             <TextView
                 android:id="@+id/tv_gate_code"
                 style="@style/testHintStyle"
                 android:layout_below="@+id/view_33"
-                android:text="@string/gate_code"
-                android:visibility="gone" />
+                android:text="@string/gate_code" />
 
             <EditText
                 android:id="@+id/ed_gate_code"
@@ -116,8 +114,7 @@
                 android:layout_toEndOf="@+id/tv_gate_code"
                 android:layout_toRightOf="@+id/tv_gate_code"
                 android:hint="@string/gate_code"
-                android:inputType="text"
-                android:visibility="gone" />
+                android:inputType="text" />
 
             <View
                 android:id="@+id/view_3"

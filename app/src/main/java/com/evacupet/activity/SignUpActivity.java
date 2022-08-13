@@ -418,7 +418,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             user.put("Volunteer", signUpType);
             user.put("TermsAccepted", isCheckTerms);
             //user.put("admin_status", 1);
-//            user.put("GateCode", edGateCode.getText().toString());
+            String gateCode = edGateCode.getText().toString();
+            if (gateCode.isEmpty()) {
+                user.put("GateCode","");
+            } else {
+                user.put("GateCode",edGateCode.getText().toString());
+            }
             if (!state.equals("Select state")) {
                 user.put("State", state);
             } else {

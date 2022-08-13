@@ -671,7 +671,12 @@ public class ProfileActivity extends DashboardActivity implements View.OnClickLi
         user.put("FirstName",edFirstName.getText().toString());
         user.put("LastName",edLastName.getText().toString());
         user.put("Volunteer",signUpType);
-//        user.put("GateCode",edGateCode.getText().toString());
+        String gateCode = edGateCode.getText().toString();
+        if (gateCode.isEmpty()) {
+            user.put("GateCode","");
+        } else {
+            user.put("GateCode",edGateCode.getText().toString());
+        }
         if (!state.equals("Select state")) {
             user.put("State", state);
         }
